@@ -1,0 +1,576 @@
+/*
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografia
+4. Visuales
+*/
+
+:root {
+    --blue-sky:#54D1ED;
+    --green-success:#41CF69;
+    --white-level:#F8F8FC;
+    --white:#ffffff;
+}
+
+*{	
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+   
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans'; 
+    background-color: #F8F8FC;
+   }
+
+header {
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 35rem;
+    margin: auto;
+    height: 80px;
+    text-align: left;
+    padding: 1rem;
+   }
+    
+header span{
+    float: right;
+}
+
+header p{
+    font-size: 18px;
+    color: #58506B;
+    font-weight: 600;
+}
+
+.icon-top{
+    width: 2.5rem;
+}
+
+/* Section Balance */
+
+.container-card{
+    width: 301px;
+    margin: auto;
+    min-width: 288px;
+    max-width: 900px;
+    height: 320px;
+    text-align: center;
+    align-self: center;
+}
+
+.card{
+    position: absolute;
+    width: 300px;
+    background: linear-gradient(180deg, rgba(44, 82, 216, 0) 0%, rgba(44, 82, 216, 0.4) 100%), #54D1ED;
+    background-blend-mode: multiply, normal;
+    box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
+    border-radius: 20px;
+}
+
+.container-card .card img{
+    position: relative;
+    right: -53px;
+    top: -30px;
+}
+
+.container-card .card .card-top{
+    position: absolute;
+    width: 112px;
+    height: 50px;
+    left: 20px;
+    top: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: initial;
+}
+
+.container-card .card .card-botton{
+    position: absolute;
+    width: 60px;
+    height: 21px;
+    left: 20px;
+    bottom: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: initial;
+}
+
+.container-card .card .card-bottontwo{
+    position: absolute;
+    width: 56px;
+    height: 21px;
+    left: 20px;
+    bottom: 45px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: initial;
+}
+
+.container-card .card-data{
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    height: 102px;
+    top: 285px;
+    background: #ffffff;
+    box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
+    border-radius: 20px;   
+}
+
+table{
+    position: absolute;
+}
+
+.td-text{
+    position: static;
+    width: 185px;
+
+    font-family: 'Open Sans';
+
+    font-size: 14px;
+    line-height: 28px;
+    display: flex;
+
+    color: #58506B;
+    flex: none;
+}
+
+.td-value{
+    font-size: 14px;
+    color: #58506B;
+}
+
+
+/* Section Goal */
+
+.section-goal{
+    height: 21rem;
+    max-width: 37rem;
+    margin: auto;
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    text-align: left;
+    padding: 0rem 1rem 0rem 1rem;
+}
+    
+.section-goal span{
+    float: right;
+}
+
+.goal-container{
+    height: 100%;
+}
+
+.goal-travel{
+    width: 44%;
+    margin-left: 10px;
+    margin-right: 8px;
+    float: left;
+    height: 20rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
+}
+
+.goal-mac{
+    width: 44%;
+    margin-left: 8px;
+    margin-right: 10px;
+    float: right;
+    height: 20rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
+}
+
+.goal-text{
+    position: relative;
+    font-size: 18px;
+    color: #58506B;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 35rem;
+    margin: auto;
+    height: 80px;
+    text-align: left;
+    padding: 1rem;
+}
+
+.goal-text span{
+    float: right;
+}
+
+.circle-percent{
+    position: absolute;
+    left: 4rem;
+}
+
+.cont-goal{
+    padding: 1rem 0rem 1rem 0rem;
+    margin-bottom: 1rem;
+    color: #817699;
+    font-size: 14px;
+}
+
+.cont-goaltwo{
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #817699;
+    font-size: 14px;
+}
+
+.value-one{
+    font-size: 12px;
+    float: right;
+    font-weight: 600;
+    color: #54D1ED;
+    position: absolute;
+    top: 14rem;
+    left: 9.5rem;
+}
+
+.value-onee{
+    font-size: 12px;
+    float: right;
+    font-weight: 600;
+    color: #54D1ED;
+    top: 14rem;
+    position: absolute;
+    right: 5rem;
+}
+
+
+.value-two{
+    font-size: 10px;
+    float: right;
+    position: absolute;
+    top: 16rem;
+    left: 9.5rem;
+    color: #817699;
+}
+
+.value-twoo{
+    font-size: 10px;
+    float: right;
+    font-size: 10px;
+    position: absolute;
+    top: 16rem;
+    color: #817699;
+    right: 5rem;
+}
+
+.number-percent{
+    position: relative;
+    top: -4rem;
+    right: -1.3rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #54D1ED;
+}
+
+.number-percentwo{
+    position: relative;
+    top: -3.8rem;
+    right: -1.5rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #54D1ED;
+}
+
+.btn{
+    text-decoration: none;
+    width: 64px;
+    height: 21px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #41CF69;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 0.5px solid #41CF69;
+    background-color: #e4ffee;
+  }
+
+.btn:hover{
+    color: green;
+    background-color: #ffffff;
+    border: 0.5px solid green;
+  }
+
+
+/* Section Robot */
+
+.section-robot{
+    height: 28rem;
+    max-width: 41rem;
+    margin: auto;
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: -6px;
+    text-align: left;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.container-robot{
+    height: 100%;
+    padding: 2rem;
+}
+
+.robot{
+    width: 50%;
+    text-align: center;
+    height: 20rem;
+    float: left;
+    background-color: #ffffff;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.icon-robot{
+    position: relative;
+    top: -15.5rem;
+}
+
+.robot-text{
+    position: relative;
+    font-size: 10px;
+    color: #817699;
+    top: -6rem;
+}
+
+.robot-textwo{
+    position: relative;
+    font-size: 12px;
+    color: #817699;
+    top: -8.5rem;
+}
+
+.skandia{
+    width: 50%;
+    height: 20rem;
+    float: right;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.active-green{
+    font-size: 10px;
+    color: #41CF69;
+}
+
+.active{
+    font-size: 10px;
+}
+
+.img-left{
+    float: left;
+    margin-top: 2rem;
+}
+
+
+.img-right{
+    float: right;
+    margin-top: 2rem;
+}
+
+.percentnum{
+    float: right;
+}
+
+.text-rob{
+    padding: 2rem;
+    font-size: 10px;
+    color: #58506B;
+    background-color: #ffffff;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
+}
+
+.fic{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.ficnum{
+    font-weight: 600;
+    font-size: 12px;
+    color:#58506B;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Section Video */
+
+.video{
+    height: 35rem;
+    max-width: 45rem;
+    margin: auto;
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    width: 100%;
+    min-width: -6px;
+    text-align: left;
+    padding: 1rem;
+}
+
+.container-video{
+    width: min-content;
+    margin: auto;
+    height: -webkit-fill-available;
+}
+
+.gradient{
+    border-radius: 3rem;
+    position: relative;
+    top: -6rem;
+}
+
+.box-vid{
+    height: -webkit-fill-available;
+}
+
+.videoimg{
+    border-radius: 3rem;
+}
+
+.saving-ad{
+    position: relative;
+    top: -15rem;
+    padding: 1rem 2rem 1rem 2rem;
+}   
+
+.saving{
+    color: #ffffff;
+    font-size: 24px;
+    display: flex;
+}
+
+.advisor {
+    color: #ffffff;
+    font-size: 12px;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.saving-slide{
+    position: relative;
+    top: -13rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+/* Section Info */
+
+.info {
+    height: 31rem;
+    max-width: 45rem;
+    margin: auto;
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: -6px;
+    text-align: left;
+    padding: 1rem;
+}
+
+.container-info{
+    height: 100%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
+}
+
+.exp-one {
+    width: 70%;
+    float: left;
+}
+
+.exp-two {
+    width: 30%;
+    float: right;
+    text-align-last: center;
+}
+
+.exp-text{
+    font-size: 14px;
+    font-weight: normal;
+    color: #817699;
+    margin-bottom: 0.5rem;
+}
+
+.exp-text-two{
+    font-size: 10px;
+}
+
+.wallet{
+    margin: auto;
+}
+
+.spending{
+    height: 9rem;
+    padding: 1rem;
+}
+
+
+footer{
+    height: auto;
+    max-width: 39rem;
+    margin: auto;
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+}
+
+.menu{
+    width: 40rem;
+}
