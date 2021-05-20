@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FrontEnd Test - nuvu</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./sweetAlert/sweetalert2.all.min.js"></script>
+    <script src="./sweetAlert/sweetalert2.min.css"></script>
 </head>
 <body>
     <header>
         <p>Hola, Camila <span><img class="icon-top" src="./imgs/bell.png" alt="" /></span></p>
     </header>
         <main>
+            
             <section class="section-balance">
                 <div class="container-card">
                 <div class="card">
@@ -44,7 +47,7 @@
             <section class="section-goal">
                 <div class="goal-container">
                     <div class="goal-travel">
-                        <img src="./imgs/beach.svg" alt="" />
+                        <img class="beach" src="./imgs/beach.svg" alt="" />
                         <div class="cont-goal"><p>Viaje a Islas Canarias</p></div>
                         <img src="./imgs/circlefull.svg" alt="" /> <img class="circle-percent" src="./imgs/circle.svg" alt="" />
                         <p class="value-one">$1.630.000</p>
@@ -52,7 +55,7 @@
                         <p class="number-percent">20%</p>
                     </div>
                     <div class="goal-mac">
-                        <img src="./imgs/mac.svg" alt="" />
+                        <img class="mac" src="./imgs/mac.svg" alt="" />
                         <div class="cont-goaltwo"><p>MacBook Pro</p></div>
                         <img src="./imgs/circlefull.svg" alt="" />
                         <p class="value-onee">$ 0</p>
@@ -62,7 +65,7 @@
                 </div>
             </section>
             <div class="goal-text">
-                <p>Conoce tu portafolio <span><a class="btn" href="">Estrategia</a></span></p>
+                <p>Conoce tu portafolio <span><button class="btn" onclick="btn()">Estrategia</button></span></p>
             </div>
             <section class="section-robot">
                 <div class="container-robot">
@@ -119,4 +122,16 @@
             </div>
         </footer>
 </body>
+
+<script>
+    function btn() {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Información de estrategias en proceso ...',
+            showConfirmButton: false,
+            timer: 2200
+            })
+    }
+    </script>
 </html>
